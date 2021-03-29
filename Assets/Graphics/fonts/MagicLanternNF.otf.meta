@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: be5b083c7aef0a14ca011f9ab0cf9892
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Magic Lantern NF
+  fontNames:
+  - Magic Lantern NF
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 520486a69426c604d88cd6d4d1dbd311, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

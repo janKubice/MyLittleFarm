@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7853095249202775436
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7853095249202775434}
+  - component: {fileID: 7853095249202775437}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7853095249202775434
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7853095249202775436}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.8033033, y: -0.3354601, z: 82.146484}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7853095249202775437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7853095249202775436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3fe0c4b620e1a24c9b9257b72dd7fcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: shovelDig
+    clip: {fileID: 8300000, guid: 11ee04e15b187bf44a8f3698aff42237, type: 3}
+    volume: 0.495
+    pitch: 1.58
+    loop: 0
+    source: {fileID: 0}
+  - name: watering
+    clip: {fileID: 8300000, guid: 16ae93694ada0304bbec61120527fa42, type: 3}
+    volume: 0.535
+    pitch: 1.7
+    loop: 0
+    source: {fileID: 0}
+  - name: wateringCanDown
+    clip: {fileID: 8300000, guid: 92e0400b418dae84e86cbeea6359cad3, type: 3}
+    volume: 0.479
+    pitch: 1.53
+    loop: 0
+    source: {fileID: 0}
+  - name: confirm
+    clip: {fileID: 8300000, guid: 1a5e7f688719446448957d54dc485c5d, type: 3}
+    volume: 0.479
+    pitch: 1.53
+    loop: 0
+    source: {fileID: 0}
+  - name: rooster
+    clip: {fileID: 8300000, guid: d618d8af1a61a4c48858048e16daf3ce, type: 3}
+    volume: 0.479
+    pitch: 1.53
+    loop: 0
+    source: {fileID: 0}
+  - name: drinking
+    clip: {fileID: 8300000, guid: 4de6339b3d416f7478be77d12f706240, type: 3}
+    volume: 0.479
+    pitch: 1.53
+    loop: 0
+    source: {fileID: 0}
+  - name: eating
+    clip: {fileID: 8300000, guid: 39f733468d4dc91409df4af83cf7754e, type: 3}
+    volume: 0.479
+    pitch: 1.53
+    loop: 0
+    source: {fileID: 0}
+  - name: night
+    clip: {fileID: 8300000, guid: 3e9643d16a095eb4eafea4e6d7229df1, type: 3}
+    volume: 0.479
+    pitch: 1.53
+    loop: 0
+    source: {fileID: 0}
+  - name: death
+    clip: {fileID: 8300000, guid: e6578d801bb6b3148a89efe561ac8a5c, type: 3}
+    volume: 0.479
+    pitch: 1.53
+    loop: 0
+    source: {fileID: 0}

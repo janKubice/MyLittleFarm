@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 184e43a721fd76140be107ba5d8975c8
+  - enabled: 1
+    path: Assets/Scenes/Game.unity
+    guid: 877cbd8f86a96384cb48ded266b7389f
+  - enabled: 1
+    path: Assets/Scenes/AfterDeath.unity
+    guid: 1e4bcb4364d34c240a84afb41464490e
+  - enabled: 1
+    path: Assets/Scenes/Setting.unity
+    guid: e730a4fcd8803224a9689eefe952ab0a
+  - enabled: 1
+    path: Assets/Scenes/Tutorial1.unity
+    guid: f977f2e3f25400440aac9b6ea6651448
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 17c1cb34d25a1ad49b9c0b0632d21a21
+  - enabled: 1
+    path: Assets/Scenes/TutOrNoTut.unity
+    guid: f1f88b39519c5254db7b9226cbdee7a6
+  - enabled: 1
+    path: Assets/Scenes/Tutorial2.unity
+    guid: 0a061e7f18c780d459abd89c8e31ca16
+  - enabled: 1
+    path: Assets/Scenes/Tutorial3.unity
+    guid: e48a6b0248c310148bf23ba008e63d46
+  - enabled: 1
+    path: Assets/Scenes/House.unity
+    guid: dda0a3ac817f05245ab64cedb56ca032
+  m_configObjects: {}
