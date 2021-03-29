@@ -54,33 +54,22 @@ public class CropTemplate : Item, IKillable, IAgable, IPlacable
 
     void FixedUpdate()
     {
-        if (IsPlanted())
+        if (planted)
         {
             age += Time.fixedDeltaTime;
         }
+        else return;
 
-        if (!planted)
-        {
-            planted = IsPlanted();
-        }
-        else
-        {
-            if (tile == null)
-                AssignTile();
-
-            AgeController(age);
-            WaterController();
-        }    
-
+        AgeController();
+        WaterController();
     }
 
     /// <summary>
     /// přiřadí políčko na kterém je
     /// </summary>
-    public void AssignTile()
+    public void AssignTile(TileTemplate tile)
     {
-        GameObject tileGO = transform.parent.gameObject;
-        tile = tileGO.GetComponent<TileTemplate>();
+        this.tile = tile;
     }
 
     /// <summary>
@@ -96,7 +85,7 @@ public class CropTemplate : Item, IKillable, IAgable, IPlacable
         }
     }
 
-    public void AgeController(float age)
+    public void AgeController()
     {
         if (age < stage1_endAge)
         {
@@ -142,7 +131,7 @@ public class CropTemplate : Item, IKillable, IAgable, IPlacable
     /// <param name="sprite">požadovaný sprite</param>
     private void SetSprite(Sprite sprite)
     {
-        spriteRend.sprite = sprite;
+        tile.GetComponent<Dirt>().plant.sprite = sprite;
     }
 
     /// <summary>
@@ -222,23 +211,9 @@ public class CropTemplate : Item, IKillable, IAgable, IPlacable
         else return 0;
     }
 
-
-    /// <summary>
-    /// zjistí zda je kytka zasazena
-    /// </summary>
-    /// <returns></returns>
-    private bool IsPlanted()
+    public void plant()
     {
-        if (gameObject.transform.parent == null)
-            return false;
-        else if (gameObject.transform.parent.tag == "tile")
-        {
-            if (gameObject.name.Contains("Seed"))
-                gameObject.name.Remove(gameObject.name.Length - 4, 4);
-            return true;
-        }
-        else
-            return false;
+        this.planted = true;
     }
 
     public void death(string reason)

@@ -4,5 +4,5 @@ using UnityEngine;
 
 public interface IPlacable
 {
-    void AssignTile();
+    void AssignTile(TileTemplate tile);
 }

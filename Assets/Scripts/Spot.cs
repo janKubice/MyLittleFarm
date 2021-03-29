@@ -35,6 +35,9 @@ public class Spot : MonoBehaviour
             countText.text = "";
     }
 
+    /// <summary>
+    /// Pouze odstrani
+    /// </summary>
     public void removeItemFromSpot()
     {
         if (itemOnSpot.Count == 0)
@@ -63,6 +66,10 @@ public class Spot : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Vezme a odstrani
+    /// </summary>
+    /// <returns></returns>
     public Item getItem()
     {
         if (itemOnSpot.Count == 0)

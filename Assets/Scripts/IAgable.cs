@@ -4,5 +4,5 @@ using UnityEngine;
 
 public interface IAgable
 {
-    void AgeController(float age);
+    void AgeController();
 }
