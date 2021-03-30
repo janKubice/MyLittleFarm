@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2176146270611842153}
   - component: {fileID: 1273027096829014528}
   m_Layer: 0
-  m_Name: New Sprite
+  m_Name: plant
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -131,10 +131,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Dirt
   type: 1
+  spriteRend: {fileID: 0}
   canPlant: 0
   fertility: 0
+  needPlowing: 0
   watered: 0
   plant: {fileID: 1273027096829014528}
+  itemOnTile: {fileID: 0}
+  plowed: {fileID: 3704049506448211377, guid: 53b65396f943b9b4383edbc55a96ff2d, type: 3}
+  unplowed: {fileID: 2482572824146134941, guid: 53b65396f943b9b4383edbc55a96ff2d,
+    type: 3}
 --- !u!212 &3808201483346414714
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -175,7 +181,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 115
-  m_Sprite: {fileID: 4548234534049708230, guid: 00c1933aedac38340abc55da0c3d6f6f,
+  m_Sprite: {fileID: 2482572824146134941, guid: 53b65396f943b9b4383edbc55a96ff2d,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -197,7 +203,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}

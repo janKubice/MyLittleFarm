@@ -9,7 +9,7 @@ public class TileTemplate : MonoBehaviour
     public TileType.Type type;
 
     protected Player player;
-    protected SpriteRenderer spriteRend;
+    public SpriteRenderer spriteRend;
     protected GameObject playerDistancePoint;
     protected UIData output;
 

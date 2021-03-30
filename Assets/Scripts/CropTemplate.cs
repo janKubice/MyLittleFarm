@@ -16,7 +16,7 @@ public class CropTemplate : Item, IKillable, IAgable, IPlacable
 
     private float water;
     private float age;
-    private bool canBeHarvested;
+    public bool canBeHarvested;
     private bool planted;
     private float timeWatered;
 
@@ -41,15 +41,6 @@ public class CropTemplate : Item, IKillable, IAgable, IPlacable
         tile = null;
         quality = 1;
         base.Start();
-    }
-
-    void OnMouseDown()
-    {
-        if (canBeHarvested)
-        {
-            Chop(QualityCalculate());
-        }
-
     }
 
     void FixedUpdate()
@@ -137,13 +128,18 @@ public class CropTemplate : Item, IKillable, IAgable, IPlacable
     /// <summary>
     /// poseká rostlinu, vytvoří sklizenou plodinu na prodej s příslušnou kvalitou a cenou
     /// </summary>
-    private void Chop(float quality)
+    public void Chop()
     {
         if (canBeHarvested)
         {
-            SetSprite(stage5);
-            CropSpawn(quality);
-            //Destroy(gameObject);
+            SetSprite(null);
+            CropSpawn();
+            tile.GetComponent<Dirt>().itemOnTile = null;
+            tile.GetComponent<Dirt>().needPlowing = true;
+            tile.GetComponent<Dirt>().canPlant = false;
+            tile.GetComponent<Dirt>().spriteRend.sprite = tile.GetComponent<Dirt>().unplowed;
+            tile.GetComponent<Dirt>().plant = null;
+            Destroy(gameObject);
         }
 
     }
@@ -152,25 +148,13 @@ public class CropTemplate : Item, IKillable, IAgable, IPlacable
     /// spawne crop
     /// </summary>
     /// <param name="price">cena cropu</param>
-    private void CropSpawn(float quality)
+    private void CropSpawn()
     {
         int number = Random.Range(1, 4);
         for (int i = 0; i <= number; i++)
         {
-            GameObject plodina = Instantiate(new GameObject());
-            plodina.transform.localScale = new Vector2(0.1f, 0.1f);
-
-            plodina.AddComponent<SpriteRenderer>();
-            plodina.GetComponent<SpriteRenderer>().sprite = product.GetComponent<SpriteRenderer>().sprite;
-            plodina.GetComponent<SpriteRenderer>().sortingLayerName = "Crop";
-
-
-            plodina.AddComponent<Item>();
-
-            plodina.tag = "ItemToSale";
-            plodina.name = name;
-
-            plodina.AddComponent<PolygonCollider2D>().isTrigger = true;
+            GameObject plodina = Instantiate(product);
+            FindObjectOfType<Player>().inventory.placeItem(plodina);
         }
 
 

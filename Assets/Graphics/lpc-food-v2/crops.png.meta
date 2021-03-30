@@ -286,7 +286,7 @@ TextureImporter:
     second: crops_93
   - first:
       213: 6558103792167691978
-    second: crops_94
+    second: mrkev
   - first:
       213: -4769451408755731647
     second: crops_95
@@ -301,13 +301,13 @@ TextureImporter:
     second: crops_98
   - first:
       213: -1325689043919491311
-    second: crops_99
+    second: redkev
   - first:
       213: 1336106381982949313
-    second: crops_100
+    second: repa
   - first:
       213: 1269318197135887549
-    second: crops_101
+    second: turin
   - first:
       213: 610886628634230302
     second: crops_102
@@ -763,10 +763,10 @@ TextureImporter:
     second: crops_252
   - first:
       213: -3039098886462653186
-    second: crops_253
+    second: cervene zeli
   - first:
       213: 545532931187373843
-    second: crops_254
+    second: zeli
   - first:
       213: -4902715999553890370
     second: crops_255
@@ -781,10 +781,10 @@ TextureImporter:
     second: crops_258
   - first:
       213: -6390899821493003179
-    second: crops_259
+    second: kvetak
   - first:
       213: 934298500480936753
-    second: crops_260
+    second: brokolice
   - first:
       213: 3144216701762948775
     second: crops_261
@@ -796,19 +796,19 @@ TextureImporter:
     second: crops_263
   - first:
       213: -766007002012338847
-    second: crops_264
+    second: lilek
   - first:
       213: -5395319880771622628
-    second: crops_265
+    second: cuketa
   - first:
       213: 5201942159505157353
     second: crops_266
   - first:
       213: 1483198654388928773
-    second: crops_267
+    second: okurka
   - first:
       213: 5529170504357419524
-    second: crops_268
+    second: jahody
   - first:
       213: 4582634370224467058
     second: crops_269
@@ -3266,7 +3266,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: crops_94
+      name: mrkev
       rect:
         serializedVersion: 2
         x: 97
@@ -3371,7 +3371,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: crops_99
+      name: redkev
       rect:
         serializedVersion: 2
         x: 259
@@ -3392,7 +3392,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: crops_100
+      name: repa
       rect:
         serializedVersion: 2
         x: 291
@@ -3413,7 +3413,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: crops_101
+      name: turin
       rect:
         serializedVersion: 2
         x: 323
@@ -6605,12 +6605,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: crops_253
+      name: cervene zeli
       rect:
         serializedVersion: 2
-        x: 129
+        x: 160
         y: 451
-        width: 62
+        width: 31
         height: 25
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -6626,11 +6626,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: crops_254
+      name: zeli
       rect:
         serializedVersion: 2
         x: 192
-        y: 451
+        y: 449
         width: 31
         height: 19
       alignment: 0
@@ -6731,7 +6731,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: crops_259
+      name: kvetak
       rect:
         serializedVersion: 2
         x: 352
@@ -6752,7 +6752,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: crops_260
+      name: brokolice
       rect:
         serializedVersion: 2
         x: 384
@@ -6836,7 +6836,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: crops_264
+      name: lilek
       rect:
         serializedVersion: 2
         x: 514
@@ -6857,10 +6857,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: crops_265
+      name: cuketa
       rect:
         serializedVersion: 2
-        x: 548
+        x: 547
         y: 451
         width: 26
         height: 27
@@ -6899,7 +6899,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: crops_267
+      name: okurka
       rect:
         serializedVersion: 2
         x: 610
@@ -6920,7 +6920,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: crops_268
+      name: jahody
       rect:
         serializedVersion: 2
         x: 646
@@ -8104,7 +8104,7 @@ TextureImporter:
         width: 31
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -8125,7 +8125,7 @@ TextureImporter:
         width: 32
         height: 29
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
