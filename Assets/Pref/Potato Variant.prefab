@@ -108,6 +108,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Potato Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 3371243987674572997, guid: 14bce5d9787ed9b47934cb76b2dfdda7,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 155
+      objectReference: {fileID: 0}
+    - target: {fileID: 5595902855855795983, guid: 14bce5d9787ed9b47934cb76b2dfdda7,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9182452759291408726, guid: 14bce5d9787ed9b47934cb76b2dfdda7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -121,7 +131,7 @@ PrefabInstance:
     - target: {fileID: 9182452759291408726, guid: 14bce5d9787ed9b47934cb76b2dfdda7,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.68355
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9182452759291408726, guid: 14bce5d9787ed9b47934cb76b2dfdda7,
         type: 3}

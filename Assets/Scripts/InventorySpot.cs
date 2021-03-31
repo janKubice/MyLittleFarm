@@ -9,7 +9,8 @@ public class InventorySpot : Spot
     protected virtual void Start()
     {
         itemOnSpot = null;
-        itemSprite.sprite = null;
+        itemImage.sprite = null;
+        itemImage.color = new Color(itemImage.color.r, itemImage.color.g, itemImage.color.b,0);
         slotSprite.sprite = normalSprite;
         free = true;
         base.Start();

@@ -52,7 +52,7 @@ public class CropTemplate : Item, IKillable, IAgable, IPlacable
         else return;
 
         AgeController();
-        WaterController();
+       
     }
 
     /// <summary>
@@ -61,19 +61,6 @@ public class CropTemplate : Item, IKillable, IAgable, IPlacable
     public void AssignTile(TileTemplate tile)
     {
         this.tile = tile;
-    }
-
-    /// <summary>
-    /// zjišťuje stav vody
-    /// přebírá stav vody z rodiče (tile) v sekundách
-    /// pokud zbývá vody pod 15 sekund nastaví uschlý sprite
-    /// </summary>
-    private void WaterController()
-    {
-        if (water > 50)
-        {
-            timeWatered += Time.deltaTime;
-        }
     }
 
     public void AgeController()
@@ -154,7 +141,7 @@ public class CropTemplate : Item, IKillable, IAgable, IPlacable
         for (int i = 0; i <= number; i++)
         {
             GameObject plodina = Instantiate(product);
-            FindObjectOfType<Player>().inventory.placeItem(plodina);
+            FindObjectOfType<Player>().inventory.placeItem(plodina.GetComponent<Item>());
         }
 
 

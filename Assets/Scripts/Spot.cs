@@ -7,7 +7,7 @@ public class Spot : MonoBehaviour
 {
     public List<Item> itemOnSpot;
     public SpriteRenderer slotSprite;
-    public SpriteRenderer itemSprite;
+    public Image itemImage;
 
     public bool free;
     public Text countText;
@@ -18,7 +18,8 @@ public class Spot : MonoBehaviour
     protected virtual void Start()
     {
         itemOnSpot = new List<Item>();
-        itemSprite.sprite = null;
+        itemImage.sprite = null;
+        itemImage.color = new Color(itemImage.color.r, itemImage.color.g, itemImage.color.b, 0);
         slotSprite.sprite = normalSprite;
         free = true;
         countText.text = "";
@@ -27,7 +28,8 @@ public class Spot : MonoBehaviour
     {
         itemOnSpot.Add(item);
         item.transform.position = new Vector3(10000, 10000, item.transform.position.z);
-        itemSprite.sprite = item.gameObject.GetComponent<SpriteRenderer>().sprite;
+        itemImage.sprite = item.gameObject.GetComponent<SpriteRenderer>().sprite;
+        itemImage.color = new Color(itemImage.color.r, itemImage.color.g, itemImage.color.b, 1);
         free = false;
         if (item.stackable)
             countText.text = itemOnSpot.Count.ToString();
@@ -54,14 +56,16 @@ public class Spot : MonoBehaviour
             if (itemOnSpot.Count == 0)
             {
                 free = true;
-                itemSprite.sprite = null;
+                itemImage.sprite = null;
+                itemImage.color = new Color(itemImage.color.r, itemImage.color.g, itemImage.color.b, 0);
                 countText.text = "";
             }
         }
         else
         {
             free = true;
-            itemSprite.sprite = null;
+            itemImage.sprite = null;
+            itemImage.color = new Color(itemImage.color.r, itemImage.color.g, itemImage.color.b, 0);
             countText.text = "";
         }
     }
@@ -84,14 +88,16 @@ public class Spot : MonoBehaviour
             if (itemOnSpot.Count == 0)
             {
                 free = true;
-                itemSprite.sprite = null;
+                itemImage.sprite = null;
+                itemImage.color = new Color(itemImage.color.r, itemImage.color.g, itemImage.color.b, 0);
                 countText.text = "";
             }
         }
         else
         {
             free = true;
-            itemSprite.sprite = null;
+            itemImage.sprite = null;
+            itemImage.color = new Color(itemImage.color.r, itemImage.color.g, itemImage.color.b, 0);
             countText.text = "";
         }           
         

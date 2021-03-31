@@ -12,8 +12,10 @@ public class Dirt : TileTemplate
     public bool watered;
     public SpriteRenderer plant;
     public Item itemOnTile;
+
     public Sprite plowed;
     public Sprite unplowed;
+    public Sprite wateredSprite;
 
     protected override void Start()
     {
@@ -29,7 +31,7 @@ public class Dirt : TileTemplate
 
     void Update()
     {
-
+        WaterController();
     }
 
     /// <summary>
@@ -64,10 +66,29 @@ public class Dirt : TileTemplate
                 needPlowing = false;
                 return;
             }
+
+            if (player.inventory.equiped.free == false && player.inventory.equiped.itemOnSpot[0].type == ItemType.Type.WateringCan && !watered && plowed)
+            {
+                watered = true;
+                spriteRend.sprite = wateredSprite;
+            }
         }
 
 
 
+    }
+
+    /// <summary>
+    /// zjišťuje stav vody
+    /// přebírá stav vody z rodiče (tile) v sekundách
+    /// pokud zbývá vody pod 15 sekund nastaví uschlý sprite
+    /// </summary>
+    private void WaterController()
+    {
+        if (water > 50)
+        {
+            timeWatered += Time.deltaTime;
+        }
     }
 
     void OnMouseOver()
